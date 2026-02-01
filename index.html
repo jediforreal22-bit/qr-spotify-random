@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Spotify Song</title>
+  <script>
+    const songs = [
+      "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID?si=_g7FcYHTS4qpIUQBdG4Icg",
+      "https://open.spotify.com/track/4nd6FMCfNFWkbi2dnsf5I3?si=jRo_kU-JR4qb5e_5o7QdKg",
+      "https://open.spotify.com/track/2A22iI0x4EYAVXNpKPhNEM?si=VmOge4M6TAugIp8rWXPsGQ"
+    ];
+
+    const randomSong = songs[Math.floor(Math.random() * songs.length)];
+    window.location.href = randomSong;
+  </script>
+</head>
+<body style="
+  background:black;
+  color:white;
+  font-family:sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+">
+  🎶 scegliendo una canzone per te…
+</body>
+</html>
